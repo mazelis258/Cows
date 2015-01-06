@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EWS2.0</id>
+    <version>0.0.4</version>
+    <title>Microsoft.Exchange.WebServices 2.0</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft.Exchange.WebServices 2.0 EWS
+Trying to make it work for Phone 7.1</description>
+    <summary>Exchange EWS 2.0
+Trying to make it work for Phone 7.1</summary>
+    <copyright>Microsoft</copyright>
+    <tags>EWS 2.0 Exchange</tags>
+    <dependencies>
+      <group targetFramework="WindowsPhone7.1" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net" targetFramework="" />
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

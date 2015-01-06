@@ -1,0 +1,6 @@
+c:\users\justinas\documents\visual studio 2013\Projects\5 phase\5 phase\bin\5 phase.dll.config
+c:\users\justinas\documents\visual studio 2013\Projects\5 phase\5 phase\bin\5 phase.dll
+c:\users\justinas\documents\visual studio 2013\Projects\5 phase\5 phase\bin\5 phase.pdb
+c:\users\justinas\documents\visual studio 2013\Projects\5 phase\5 phase\obj\Debug\5 phase.dll
+c:\users\justinas\documents\visual studio 2013\Projects\5 phase\5 phase\obj\Debug\5 phase.pdb
+c:\users\justinas\documents\visual studio 2013\Projects\5 phase\5 phase\obj\Debug\5 phase.csprojResolveAssemblyReference.cache
