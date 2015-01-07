@@ -2,6 +2,7 @@
 
 <asp:Content ContentPlaceHolderID="CPH1" runat="server">
 
+    
     <asp:GridView ID="GridView1"  AllowSorting="true" OnSorting="SortRecords" runat="server" AutoGenerateColumns="false">
         <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         
@@ -18,6 +19,7 @@
             <asp:BoundField SortExpression="mir_data" DataField="mir_data" HeaderText="cow's death" ItemStyle-Width="200" />
         </Columns>
     </asp:GridView>
+    <asp:Button ID="DeleteButton" runat="server" Text="Delete" OnClick="DeleteButtonClick"/>
 
 </asp:Content>
 

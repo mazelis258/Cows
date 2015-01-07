@@ -14,18 +14,18 @@
         <header>
             <div class='headerin'>
                 <div class='logo'>
-                    <img id='logoimage' src="5 phase/logo.PNG" alt="Logo" />
+                    <img id='logoimage' src="logo.PNG" alt="Logo" />
                     Cows
 
                 </div>
                 <nav>
-                <div class='menuin'>
-                    <ul class="menu">
-                        <li><a href="index.aspx">Home</a></li>
-                        <li><a href="about.aspx">About</a></li>
-                        <li><a href="Contacts.aspx">Contacts</a></li>
-                    </ul>
-                </div>
+                    <div class='menuin'>
+                        <ul class="menu">
+                            <li><a href="index.aspx">Home</a></li>
+                            <li><a href="about.aspx">About</a></li>
+                            <li><a href="Contacts.aspx">Contacts</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
@@ -36,11 +36,11 @@
         <div class='container'>
             <div class='container1'>
                 <asp:ContentPlaceHolder ID="CPH1" runat="server" Visible="true">
-
                 </asp:ContentPlaceHolder>
             </div>
             <div class='container2'>
-                 <% if ( Session["login"] == null ) { %>
+                <% if (Session["login"] == null)
+                   { %>
                 <div id="login">
                     <h1>Log in</h1>
                     <h3>login</h3>
@@ -48,23 +48,28 @@
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextLogin"
                         ErrorMessage="Enter email!" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic">
                             * Enter correct email address!</asp:RegularExpressionValidator>
-                    
+
 
 
                     <h3>password</h3>
                     <asp:TextBox ID="TextPassword" runat="server" TextMode="Password"></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2"
-                          ControlToValidate = "TextPassword"
-                          Display = "Dynamic"
-                          runat = "server"
-                          ErrorMessage = "Please enter password" ForeColor="Red">* Please enter password</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2"
+                        ControlToValidate="TextPassword"
+                        Display="Dynamic"
+                        runat="server"
+                        ErrorMessage="Please enter password" ForeColor="Red">* Please enter password</asp:RequiredFieldValidator>
                     <asp:Button ID="loginin" runat="server" Text="LogIn" OnClick="loginin_Click" />
 
                 </div>
-                <% } else { %>
+                <% }
+                   else
+                   { %>
                     You are succesfully logged in!
-                    <li ><a href="Cows.aspx">CowsList</a></li>
-                    <li ><a href="logout.aspx">Logout</a></li>
+                
+                    <li><a href="Cows.aspx">CowsList</a></li>
+                    <li><a href="AddCow.aspx">AddCow</a></li>
+                    <li><a href="logout.aspx">Logout</a></li>
+              
                 <% } %>
             </div>
         </div>

@@ -13,5 +13,9 @@ namespace _5_phase
         {
 
         }
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            Label1.Text = DateTime.Now.ToString();
+        }
     }
 }

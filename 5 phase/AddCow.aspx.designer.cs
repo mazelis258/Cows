@@ -10,42 +10,51 @@
 namespace _5_phase {
     
     
-    public partial class WebForm1 {
+    public partial class AddCow {
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// CowsName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.WebControls.TextBox CowsName;
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// CowsNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.TextBox CowsNumber;
         
         /// <summary>
-        /// Timer1 control.
+        /// CowsBirth control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.Timer Timer1;
+        protected global::System.Web.UI.WebControls.TextBox CowsBirth;
         
         /// <summary>
-        /// Label1 control.
+        /// CowsDeath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox CowsDeath;
+        
+        /// <summary>
+        /// ButtonADD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonADD;
     }
 }

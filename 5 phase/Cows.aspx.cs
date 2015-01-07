@@ -148,5 +148,30 @@ namespace _5_phase
             return table;
 
         }
+
+        protected void DeleteButtonClick(object sender, EventArgs e)
+        {
+            //DELETE FROM `pastebimas_just`.`sharp_cows` WHERE `sharp_cows`.`id` = 4;
+            foreach (GridViewRow row in GridView1.Rows)
+            {
+                if (row.RowType == DataControlRowType.DataRow)
+                {
+                    CheckBox chkRow = (row.Cells[0].FindControl("chkCtrl") as CheckBox);
+                    if (chkRow.Checked)
+                    {
+                        string NumberToDelete = row.Cells[1].Text;
+                        string constr = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+                  
+                        MySqlConnection con = new MySqlConnection(constr);
+                        con.Open();
+                        MySqlCommand cmd = new MySqlCommand("Delete From sharp_cows where nr='" + NumberToDelete + "'", con);
+                        cmd.ExecuteNonQuery();
+                        cmd.Dispose();
+                        BindData();
+
+                    }
+                }
+            }
+        }
     }
 }
