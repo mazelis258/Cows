@@ -15,7 +15,10 @@ namespace _5_phase
         }
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            Label1.Text = DateTime.Now.ToString();
+            string zoneId = "Central European Standard Time";
+            TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(zoneId);
+            DateTime result = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tzi);
+            Label1.Text = result.ToString();
         }
     }
 }
